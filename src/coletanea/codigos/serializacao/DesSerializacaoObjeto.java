@@ -26,6 +26,8 @@ public class DesSerializacaoObjeto {
 				+ cliente.getCodigo() + "\nDescricao: "
 				+ cliente.getDescricao() + "\nData de Cadastro: "
 				+ formatar(cliente.getDataCadastro()));
+		
+		System.out.println(cliente.getNaoSerializa()); //retorna null, propriedade marcada com transient
 	}
 
 	private static String formatar(Calendar dataCadastro) {

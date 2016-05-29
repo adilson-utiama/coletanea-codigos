@@ -15,6 +15,8 @@ public class Cliente implements Serializable {
 	private String descricao;
 	private Calendar dataCadastro;
 	
+	private transient String naoSerializa; //nao serializa
+	
 	public Cliente(){}
 
 	public Cliente(String nome, int codigo, String descricao,
@@ -56,6 +58,14 @@ public class Cliente implements Serializable {
 
 	public void setDataCadastro(Calendar dataCadastro) {
 		this.dataCadastro = dataCadastro;
+	}
+	
+	public String getNaoSerializa() {
+		return naoSerializa;
+	}
+	
+	public void setNaoSerializa(String naoSerializa) {
+		this.naoSerializa = naoSerializa;
 	}
 
 }

@@ -11,6 +11,7 @@ public class SerializandoObjeto {
 	public static void main(String[] args) {
 		
 		Cliente cliente = new Cliente("Loja Cliente", 123, "Loja do Cliente", Calendar.getInstance());
+		cliente.setNaoSerializa("nao serializa");
 		
 		String file = "serializado.ser";
 		ObjectOutputStream object = null;
