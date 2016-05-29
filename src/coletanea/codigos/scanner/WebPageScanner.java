@@ -11,7 +11,7 @@ public class WebPageScanner {
 	public static void main(String[] args) {
 
 		try {
-			URLConnection connection = new URL("http://www.google.com")
+			URLConnection connection = new URL("http://portadil.hol.es")
 					.openConnection();
 
 			Scanner sc = new Scanner(connection.getInputStream());
