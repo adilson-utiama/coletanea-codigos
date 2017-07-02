@@ -20,9 +20,12 @@ public class ConsumirWebService {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws ParseException {
+		
+		int numero = 1418;
+		
 		try {
 
-			URL url = new URL("http://wsloterias.azurewebsites.net/api/sorteio/getresultado/3/1150");
+			URL url = new URL("http://wsloterias.azurewebsites.net/api/sorteio/getresultado/3/" + numero);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
 			int code = con.getResponseCode();

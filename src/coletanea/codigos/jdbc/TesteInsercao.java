@@ -10,11 +10,11 @@ public class TesteInsercao {
 	public static void main(String[] args) {
 		
 		CadastroBuilder builder = new CadastroBuilder();
-		Cadastro cadastro = builder.nome("Adilson")
-			.sobrenome("Utiama")
+		Cadastro cadastro = builder.nome("Wilson")
+			.sobrenome("Silva")
 			.idade(37)
-			.endereco("Rua Dona Cecilia Santana")
-			.telefone("2957-4676")
+			.endereco("Rua dos JAveiros")
+			.telefone("1234-5678")
 			.naData().gerarCadastro();
 		
 		CadastroDAO dao = new CadastroDAO();
